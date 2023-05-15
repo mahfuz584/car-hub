@@ -1,0 +1,10 @@
+.navbar a:hover {
+    color: inherit;
+    background-color: transparent;
+    text-decoration: none;
+    color: blue;
+  }
+
+li{
+  font-weight: 500;
+}
