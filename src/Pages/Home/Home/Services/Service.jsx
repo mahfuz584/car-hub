@@ -1,8 +1,9 @@
 import React from "react";
 import { FaLongArrowAltRight } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const Service = ({ service }) => {
-  const { title, img, price } = service;
+  const { _id,title, img, price } = service;
   return (
     <div className="">
       <div class=" flex items-center cursor-pointer">
@@ -14,9 +15,11 @@ const Service = ({ service }) => {
           <div>
             <div className="flex justify-between items-center">
               <p class="mt-2 font-bold text-[#FF3811]">Price : ${price}</p>
+              <Link to={`/checkout/${_id}`}>
               <div className="border-2 p-2 rounded-full border-[#FF3811] hover:bg-[#FF3811] hover:scale-110 transition duration-500">
                    <FaLongArrowAltRight></FaLongArrowAltRight>
               </div>
+              </Link>
             </div>
           </div>
         </div>
